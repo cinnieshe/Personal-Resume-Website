@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <meta name="description" content="She Fong Wing (Cinnie) Personal Website">
+    <meta name="author" content="Cinnie She">
+    <meta name="keywords" content="Career, Cinnie, Personal Website">
+    <title>Cinnie She - HKUST RMBI</title>
+    <link rel="stylesheet" href="BS5/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Cinnie She - HKUST <span class="inline-block navtitle">RMBI Year 2 Student </span></a>
+            </div>
+            <form method="get" action="SheFongWing_Resume.pdf">
+                <button type="submit" class="btn btn-secondary mx-3 d-none d-md-block position-absolute right-0 top-0 mt-2 mr-2">Download&nbspResume</button>
+            </form>  
+            <div class="dropleft d-md-none position-absolute right-0 top-0 mt-2 mr-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>                        
+                        <form method="get" action="SheFongWing_Resume.pdf">
+                            <button class="dropdown-item" type="submit">
+                            Download Resume
+                            </button>
+                        </form>
+                    </li>
+                    <li>                        
+                        <form method="get" action="#">
+                            <button class="dropdown-item" type="submit">
+                            Home
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <form method="get" action="#profile">
+                            <button class="dropdown-item" type="submit">
+                            Profile
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <form method="get" action="#education">
+                            <button class="dropdown-item" type="submit">
+                            My Education
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <form method="get" action="#experience">
+                            <button class="dropdown-item" type="submit">
+                            Experience
+                            </button>
+                        </form>
+                    </li>
+                    <li>                        
+                        <form method="get" action="#abilities">
+                            <button class="dropdown-item" type="submit">
+                            Abilities
+                            </button>
+                        </form>
+                    </li>
+                    <li>                        
+                        <form method="get" action="#extraactivities">
+                            <button class="dropdown-item" type="submit">
+                            Extracurricular Activities
+                            </button>
+                        </form>
+                    </li>
+                    <li>                        
+                        <form method="get" action="#hobbies">
+                            <button class="dropdown-item" type="submit">
+                            My Hobbies
+                            </button>
+                        </form>
+                    </li>
+                    <li>                        
+                        <form method="get" action="#contact">
+                            <button class="dropdown-item" type="submit">
+                            Contact Information
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+              </div>
+        </nav>
+        <!--Cover Photo-->
+        <div class="container-fluid px-0 cover-photo home">
+            <img src="Cover_Photo.PNG" class="img-fluid" style="width:100%;" alt="Cover Photo">
+            <div class="text-box">
+                <h1>Cinnie She</h1>
+                <blockquote cite="https://www.brainyquote.com/quotes/eleanor_roosevelt_126917">“Life must be lived and curiosity kept alive.”</p>
+            </div>
+        </div>
+    </header>  
+
+
+    <!--Left Side Navigation Bar-->
+    <div class="row">
+        <div class="col-md-3 d-none d-md-block">
+            <div class="list-group sidebar" id="list-tab" role="tablist">
+                <span class="list-group-item list-group-item-light py-3" aria-controls="menu">Menu</span>
+                <a class="list-group-item list-group-item-action active list-group-item-secondary" href="#" role="tab" aria-controls="home">Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#profile" role="tab" aria-controls="profile">Profile</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#education" role="tab" aria-controls="education">My Education</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#experience" role="tab" aria-controls="experience">Experience</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#abilities" role="tab" aria-controls="abilities">Abilities</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#extraactivities" role="tab" aria-controls="extraactivities">Extracurricular Activities</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#hobbies" role="tab" aria-controls="abilities">My Hobbies</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#contact" role="tab" aria-controls="contact">Contact Information</a>
+            </div>
+        </div>
+        <div class="col-md-9 border-left main-content px-4">
+            <div class="my-3">
+                <div>
+                    <img class="float-md-right mx-md-5 border" id="myphoto" src="Photo.jpeg" width="200" alt="my photo">
+                </div>
+                <h2 id="profile">PROFILE</h2>
+                <p class="text-center">Year 2 HKUST student in RMBI Major</p>
+                <p>
+                    Hi! I'm Cinnie. Thank you for coming to my personal website. 
+                    This website is coded from scratch by myself, and it is responsive!
+                    I'm currently a Year 2 student in HKUST, 
+                    majoring in Risk Management and Business Intelligence (RMBI). 
+                    Feel free to contact me any time and I'm looking forward to seeing you!
+                </p>
+                <hr>
+                <h3>About Me</h3>
+                <ul>
+                    <li>Name: She Fong Wing (Cinnie)</li>
+                    <li>Age: 18</li>
+                    <li>Location: Diamond Hill, Hong Kong</li>
+                </ul>
+                <hr>
+            </div>
+
+            <h3>My Passion & Career Target</h3>
+            <p>I like accepting challenges that have a definite answer to it and I enjoy tackling problems that could
+                systemetically solved. That's why I'm interested in mathematics related electives when I was in secondary
+                school (I took BAFS, Economics, Physics, and M2 in Form 4-6). In university, I get in touch with Python in 
+                my first year of studies and I'd fun with it! 
+            </p>
+            <p>
+                I now have a passion in learning more about the recent 
+                technologies and programming, creating my own website and applications, and adopting my new skills and 
+                knowledge in real-life business functions. Hence, my career target is to become a web 
+                developer, a software engineer, or an AI specialist (I am still struggling to identify which area to focus in
+                because they all sounds interesting to me...but...I believe I will soon make a clear decision). 
+            </p>
+            <hr>
+            <div class="mb-3">    
+                <h2 id="education">MY EDUCATION</h2>
+                <p>
+                    I graducated from Po Leung Kuk No.1 W.H. Cheung College in 2019 and have been receiving education in HKUST
+                    since then. In my Year 1 studies, my CGA was 3.289. 
+                    Here are the courses that I've taken in these 4 semesters as a RMBI student.
+                </p>
+                <div class="row">
+                    <div class="card float-left col-lg-3 col-md-6">
+                        <div class="card-body">
+                            <h3 class="card-title mb-3">2020-21 <br>Fall Semester</h3>
+                            <ul>
+                                <li class="card-text">Applied Statistics</li>
+                                <li class="card-text">Business Case Analyses</li>
+                                <li class="card-text">Business Ethics and Social Responsibility</li>
+                                <li class="card-text">Matrix Algebra and Applications</li>
+                                <li class="card-text">Operation Management</li>
+                                <li class="card-text">Understanding Society</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card float-left col-lg-3 col-md-6">
+                        <div class="card-body">
+                            <h3 class="card-title mb-3">2019-20 <br>Summer Semester</h3>
+                            <ul>
+                                <li class="card-text">Biology of Human Health</li>
+                                <li class="card-text">Undergraduate Research Opportunities</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card clear-left float-left col-lg-3 col-md-6">
+                        <div class="card-body">
+                            <h3 class="card-title mb-3">2019-20 <br>Spring Semester</h3>
+                            <ul>
+                                <li class="card-text">Business Ethics and the Individual</li>
+                                <li class="card-text">Calculus II</li>
+                                <li class="card-text">Chronicle of Internet Commerce</li>
+                                <li class="card-text">English for University Studies II</li>
+                                <li class="card-text">Introduction to Financial Market</li>
+                                <li class="card-text">Introduction to Information Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card float-left col-lg-3 col-md-6">
+                        <div class="card-body">
+                            <h3 class="card-title mb-3">2019-20 <br>Fall Semester</h3>
+                            <ul>
+                                <li class="card-text">Calculus 1B</li>
+                                <li class="card-text">English for University Studies I</li>
+                                <li class="card-text">Introduction to Computer Science</li>
+                                <li class="card-text">Microeconomics</li>
+                                <li class="card-text">Principles of Accounting I</li>
+                            </ul>
+                        </div>
+                    </div>   
+                </div>                 
+            </div>
+            <hr>
+            <div>
+                <h2 id="experience">EXPERIENCE</h2>
+                <p>
+                    I joined an Undergraduate Research Opportunities Program (UROP) last summer and participated in 
+                    2 Case Compeitions in this Fall Semester. Here are the details:
+                </p>
+                <hr>
+                <div>
+                    <h3>UROP in HKUST</h3>
+                    <h4>
+                        Project Title: Application of AI-based Technique to Enhance Thermal Comfort 
+                        Sensing for Smart Air Conditioner
+                    </h4>
+                    <p>Supervised by Professor LEE Yi-Kuen and with the help of Mr. Izhar, I finished the UROP
+                        Program successfully last summer. Due to my limited 
+                        knowledge and skills in Year 1, I was responsible solely for data collection using their 
+                        developed Android App. The app functions similar to an accelerometer and a gyroscope, and 
+                        I used it for taking related data on different human activities.
+                    </p>
+                    <p>
+                        However, I am passion about knowing more about the AI and Machine Learning technology. 
+                        Therefore, I searched for YouTube machine learning courses so that I could try to build the 
+                        machine learning model for human activities classification myself. I gained some basic knowledge
+                        on deep learning, neural networks, computer vision, and NLP using Tensorflow. With this 
+                        effort, I still face quite a lot of difficulties in creating the model. I sought advice
+                        from my supervisor, and they gave me guidance on preprocessing the data, and gaining insights
+                        from it. Unfortunately, I was unable to finish the machine learning model before the program 
+                        period ended, but I still gained valuable experience from it.
+                    </p>
+                    <p>
+                        Here is a link to the course video I've watched on YouTube: 
+                        <span><a href="https://www.youtube.com/watch?v=tPYj3fFJGjk&t=5914s" target="_blank">Go to YouTube</a></span>
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h3>Avenue Business Case Competition 2020</h3>
+                    <p>
+                        I've worked with my friends in HKUST to develop a comprehensive and strategic proposal for 
+                        Avenue, which is a leading privately-owned asset management company based in Hong Kong. The 
+                        target of the proposal is on leveraging technology to understand the behaviour and fulfil user-friendly 
+                        expectations of platform users along the customer journey, form partnership, educate and 
+                        attract new investors.
+                    </p>
+
+                    <div class="card col-6 center bg-light mb-2">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">Our Deliveries</h4>
+                            <ul>
+                                <li class="card-text">Website Improvement</li>
+                                <li class="card-text">SNS Implementation</li>
+                                <li class="card-text">Robo Advisor</li>
+                                <li class="card-text">3D Virtual Community Place</li>
+                            </ul>
+                        </div>
+                    </div> 
+
+                    <p>
+                        We did researches on how technologies could be leveraged in the business and learnt about business
+                        planning, NLP applications in Robo Advisor, and related topics.
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h3>Fintechstic Case Competition</h3>
+                    <h4>Sub-theme: Digital Wallets</h4>
+                    <p>
+                        I've worked with one of my RMBI friend, and two newly met HKUST friends from business school 
+                        in formulating fintech solutions for Tap & Go by HKT. We did a lot of research on the use of 
+                        technologies in digital wallets. In the end, we came up with ideas such as micro-investment 
+                        features, expense tracking, security measures, virtual assistant and loyalty program. I learnt 
+                        about recent applications of AI and machine learning in personal financial sectors, some 
+                        industry insights, and of course, cooperation skills.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h2 id="abilities">ABILITIES</h2>
+                <div>
+                    <h3>Spoken &amp Written Language</h3>
+                    <p class="bold">Cantonese (Native)</p>
+                    <div class="progress">
+                        <div class="skills cantonese"></div>
+                    </div>
+
+                    <p class="bold">English (Fluent)</p>
+                    <div class="progress">
+                        <div class="skills english"></div>
+                    </div>
+
+                    <p class="bold">Putonghua (Fluent)</p>
+                    <div class="progress">
+                        <div class="skills putonghua"></div>
+                    </div>
+
+                    <p class="bold">Japanese (Introductory ~ Intermediate)</p>
+                    <div class="progress">
+                        <div class="skills japanese"></div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <h3>Skills</h3>
+                    <p>
+                        I just started to get in touch with programming. Although I've limited knowledge, skills and 
+                        experience on it, but I'm dedicated to learn new things and practice hard.
+                    </p>
+                    <div class="mb-3">
+                        <h3>Programming Language</h3>
+                        <p class="bold">Python</p>
+                        <div class="progress">
+                            <div class="skills python"></div>
+                        </div>
+    
+                        <p class="bold">HTML5</p>
+                        <div class="progress">
+                            <div class="skills html5"></div>
+                        </div>
+    
+                        <p class="bold">CSS3</p>
+                        <div class="progress">
+                            <div class="skills css3"></div>
+                        </div>
+    
+                        <p class="bold">Bootstrap 5</p>
+                        <div class="progress">
+                            <div class="skills bootstrap5"></div>
+                        </div>
+
+                        <p class="bold">R</p>
+                        <div class="progress">
+                            <div class="skills r"></div>
+                        </div>
+
+                        <p class="bold">Excel VBA</p>
+                        <div class="progress">
+                            <div class="skills vba"></div>
+                        </div>
+
+                        <p class="bold">Tensorflow</p>
+                        <div class="progress">
+                            <div class="skills tensorflow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="mb-3">
+                <h2 id="extraactivities">EXTRACURRICULAR ACTIVITIES</h2>
+                <div>
+                    <h3>Financial Secretary of HKUST Table Tennis Club 2020</h3>
+                    <p>
+                        I'm responsible for managing the financial records and cash of the club, assisting the functions 
+                        of it, such as helping out in team recruitment, club trainings, and promotion activities.
+                    </p>
+                </div>
+                <div>
+                    <h3>Team Member of HKUST Table Tennis Team</h3>
+                    <p>
+                        I'm current a team memeber of HKUST Table Tennis Team. I've represented HKUST in USFHK 
+                        Table Tennis Competition. It's really fun to play table tennis with my friends and hang out 
+                        with people with the same hobby!
+                    </p>
+                    <img src="IMG-20191110-WA0013.jpg" width="100%" alt="team photo"/>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h2 id="hobbies">MY HOBBIES</h2>
+                <div>
+                    <h3>Songs Composition</h3>
+                    <p>
+                        Apart from coding, and playing table tennis, I also like to write my own songs in my spare time. 
+                        I've joined the Christmas Singing Contest with my classmate held in my secondary school with 
+                        my original song! And we ended up getting the 2nd runner-up in group singing! It was an unforgettable 
+                        experience to sing in front of the whold school.
+                    </p>
+                    <img src="IMG-20181222-WA0029.jpg" width="100%" alt="singing contest"/>
+                </div>
+                <hr>
+                <div class="mb-3">
+                    <h3>Table Tennis</h3>
+                    <p>
+                        I've been playing table tennis for 10 years and have been the team member of my primary and 
+                        secondary schools, as well as HKUST. I have been in the Heng Seng Jing Ying Team which is right 
+                        below the Hong Kong Youth Team when I was in Form 4. I enjoy playing table tennis so much!
+                    </p>
+                </div>
+                <hr>
+                <div class="mb-3">
+                    <h3>Coding</h3>
+                    <p>
+                        As a new starter in programming, I'm now excited to learn about all different skills and tools 
+                        that are in use all over the world recently. I'd love to create good-looking websites, functional applications 
+                        or programmes with my own knowledge and skills. I hope I could gain more experience on programming projects. 
+                        This personal resume website is my first website created with the use of all HTML, CSS, and Bootstrap 5 
+                        I've been learning recently, and I am really satisfied with the completion of the website at this stage!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluld bg-dark">
+            <h2 class="footer-text pt-4" id="contact">Contact Information</h2>
+            <br>
+            <p class="footer-text font-h3">Feel free to contact me through any of the following channels!</p>
+            <div class="sns">
+                <a href="https://www.facebook.com/she.cinnie" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/fong-wing-she-643b311a7" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/sfwing1126/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.snapchat.com/add/sfwinggggg" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                <a href="https://wa.me/85295258312" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <br>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="BS5/js/bootstrap.js"></script>
+</body>
+</html>
