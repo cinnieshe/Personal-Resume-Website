@@ -35,7 +35,6 @@ blockquote{
 @media screen and (max-width: 768px){
     .main-content{
         width:100%;
-        padding-left: ;
     }
 
     .center{
@@ -107,15 +106,21 @@ p{
 .putonghua {width: 75%; background-color: #f44336;}
 .japanese {width: 25%; background-color: #808080;}
 
-.python {width: 30%; background-color: #57d8e9;}
-.html5 {width: 85%; background-color: #36f155;}
-.css3 {width: 70%; background-color: #f7473a;}
+.python {width: 50%; background-color: #57d8e9;}
+.cpp{width: 40%; background-color: #6091eb;}
+.html5 {width: 80%; background-color: #36f155;}
+.css3 {width: 65%; background-color: #f7473a;}
+.js {width: 50%; background-color: #f397ee;}
 .bootstrap5 {width: 60%; background-color: #f0de3b;}
-.r {width: 15%; background-color: #9560eb;}
-.vba {width: 15%; background-color: #221fc5;}
+.git{width: 60%; background-color: #95f39a;}
+.react{width: 40%; background-color: #ebaf60;}
+.sqlite{width: 10%; background-color: #18366e;}
+.r {width: 5%; background-color: #9560eb;}
+.vba {width: 5%; background-color: #f6ffa2;}
 .tensorflow {width: 5%; background-color: #ec9c34;}
 
 .bold{
+    margin-top: 5px;
     font-weight: bold;
 }
 
