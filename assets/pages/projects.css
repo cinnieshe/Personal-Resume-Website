@@ -1,0 +1,16 @@
+.cover-photo{
+    position:relative;
+}
+
+.text-box{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -35%);
+    color: white;
+}
+
+blockquote{
+    font-size: 2vw;
+    font-style: italic;
+}
