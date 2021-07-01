@@ -23,90 +23,61 @@
     <header>
         <!--Navigation Bar-->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Cinnie She - HKUST <span class="inline-block navtitle">RMBI Year 2 Student </span></a>
-            </div>
-            <form method="get" action="SheFongWing_Resume.pdf">
-                <button type="submit" class="btn btn-secondary mx-3 d-none d-md-block position-absolute right-0 top-0 mt-2 mr-2">Download&nbspResume</button>
-            </form>  
-            <div class="dropleft d-md-none position-absolute right-0 top-0 mt-2 mr-2">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
-                  Menu
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li>                        
-                        <form method="get" action="./assets/SheFongWing_Resume.pdf">
-                            <button class="dropdown-item" type="submit">
-                            Download Resume
-                            </button>
-                        </form>
+            <div class="container-fluid">
+              <a class="navbar-brand ms-4" href="index.html">Cinnie She - HKUST <span class="inline-block navtitle">RMBI Year 2 Student </span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">About Me</a>
                     </li>
-                    <li>                        
-                        <form method="get" action="#">
-                            <button class="dropdown-item" type="submit">
-                            Home
-                            </button>
-                        </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./assets/pages/projects.html">My Projects</a>
                     </li>
-                    <li>
-                        <form method="get" action="#profile">
-                            <button class="dropdown-item" type="submit">
-                            Profile
-                            </button>
-                        </form>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        My Learnings
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">HTML5</a></li>
+                        <li><a class="dropdown-item" href="#">CSS3</a></li>
+                        <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <form method="get" action="#education">
-                            <button class="dropdown-item" type="submit">
-                            My Education
-                            </button>
-                        </form>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#profile">Profile</a>
                     </li>
-                    <li>
-                        <form method="get" action="#workexperience">
-                            <button class="dropdown-item" type="submit">
-                            Work Experience
-                            </button>
-                        </form>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#education">My Education</a>
                     </li>
-                    <li>
-                        <form method="get" action="#otherexperience">
-                            <button class="dropdown-item" type="submit">
-                            Other Experience
-                            </button>
-                        </form>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#workexperience">Work Experience</a>
                     </li>
-                    <li>                        
-                        <form method="get" action="#abilities">
-                            <button class="dropdown-item" type="submit">
-                            Abilities
-                            </button>
-                        </form>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#otherexperience">Other Experience</a>
                     </li>
-                    <li>                        
-                        <form method="get" action="#extraactivities">
-                            <button class="dropdown-item" type="submit">
-                            Extracurricular Activities
-                            </button>
-                        </form>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#abilities">Abilities</a>
                     </li>
-                    <li>                        
-                        <form method="get" action="#hobbies">
-                            <button class="dropdown-item" type="submit">
-                            My Hobbies
-                            </button>
-                        </form>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#extraactivities">Extracurricular Activities</a>
                     </li>
-                    <li>                        
-                        <form method="get" action="#contact">
-                            <button class="dropdown-item" type="submit">
-                            Contact Information
-                            </button>
-                        </form>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#hobbies">My Hobbies</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="#contact">Contact Information</a>
                     </li>
                 </ul>
+                <form class="d-flex" method="get" action="./assets/SheFongWing_Resume.pdf">
+                  <button class="btn btn-secondary" type="submit">Download Resume</button>
+                </form>
               </div>
-        </nav>
+            </div>
+          </nav>
+
         <!--Cover Photo-->
         <div class="container-fluid px-0 cover-photo home">
             <img src="./assets/images/Cover_Photo.PNG" class="img-fluid" style="width:100%;" alt="Cover Photo">
@@ -120,7 +91,7 @@
 
     <!--Left Side Navigation Bar-->
     <div class="row">
-        <div class="col-md-3 d-none d-md-block">
+        <div class="col-lg-3 d-none d-lg-block pe-0">
             <div class="list-group sidebar" id="list-tab" role="tablist">
                 <span class="list-group-item list-group-item-light py-3" aria-controls="menu">Menu</span>
                 <a class="list-group-item list-group-item-action active list-group-item-secondary" href="#" role="tab" aria-controls="home">Home</a>
@@ -134,10 +105,10 @@
                 <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#contact" role="tab" aria-controls="contact">Contact Information</a>
             </div>
         </div>
-        <div class="col-md-9 border-left main-content px-4">
+        <div class="col-lg-9 border-start px-4">
             <div class="my-3">
                 <div>
-                    <img class="float-md-right mx-md-5 border" id="myphoto" src="./assets/images/Photo.jpeg" width="200" alt="my photo">
+                    <img class="float-lg-end mx-lg-5 border photo" src="./assets/images/Photo.jpeg" width="200" alt="my photo">
                 </div>
                 <h2 id="profile">PROFILE</h2>
                 <p class="text-center">Year 2 HKUST student in RMBI Major</p>
@@ -358,7 +329,7 @@
                         Project: Task Tracking Mobile Application
                     </h4>
                     <div >
-                        <img src="./assets/images/MentorshipProgram.jpg" class="float-md-right mx-md-5 border" width="500" alt="photo with mentor Dave and buddy Waqas"/>
+                        <img src="./assets/images/MentorshipProgram.jpg" class="float-lg-end mx-lg-5 border photo" width="500" alt="photo with mentor Dave and buddy Waqas"/>
                     </div>
                     <p>I was mentored by Dave Ip and Waqas Ali from Credit Suisse throughout my project on creating 
                         a task tracking mobile application. Here is a simple demo for the product of this 10-week 
@@ -629,6 +600,7 @@
             <br>
         </div>
     </footer>
+
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="./assets/BS5/js/bootstrap.js"></script>
 </body>

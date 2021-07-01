@@ -28,30 +28,6 @@ blockquote{
     top:0;
 }
 
-@media screen and (max-width: 768px){
-    .main-content{
-        width:100%;
-    }
-
-    .center{
-        position:static;
-    }
-
-    .text-box{
-        transform: translate(-50%, -15%);
-    }
-
-    .navtitle{
-        display: none;
-    }
-
-    #myphoto{
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
-    }
-}
-
 
 #third-card{
     clear: left;
@@ -95,4 +71,21 @@ blockquote{
 .bold{
     margin-top: 5px;
     font-weight: bold;
+}
+
+@media (max-width: 991.98px){
+    .center{
+        left: 0%;
+        width:100%;
+    }
+
+    .text-box{
+        transform: translate(-50%, -15%);
+    }
+
+    .photo{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }

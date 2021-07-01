@@ -14,3 +14,7 @@ blockquote{
     font-size: 2vw;
     font-style: italic;
 }
+
+.carousel-caption-description{
+    text-align: center;
+}
