@@ -112,25 +112,158 @@
                 <div class="list-group sidebar" id="list-tab" role="tablist">
                     <span class="list-group-item list-group-item-light py-3" aria-controls="menu">Menu</span>
                     <a class="list-group-item list-group-item-action active list-group-item-secondary" href="#" role="tab" aria-controls="home">Home</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#myprojects" role="tab" aria-controls="myprojects">My Projects</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#myprojects" role="tab" aria-controls="myprojects" onclick=getResumeProjectDetails()>&nbsp&nbspPersonal Resume Website</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#myprojects" role="tab" aria-controls="myprojects" onclick=getChallengerProjectDetails()>&nbsp&nbspChallenger - Task Tracking Mobile Application</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#myprojects" role="tab" aria-controls="myprojects" onclick=getViActProjectDetails()>&nbsp&nbspModel Inference Workflow</a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#projectDetails" role="tab" aria-controls="myprojects">My Projects</a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="resumeproject" onclick=getResumeProjectDetails()>&nbsp&nbspPersonal Resume Website</a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="challengerproject" onclick=getChallengerProjectDetails()>&nbsp&nbspChallenger - Task Tracking Mobile Application</a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="viActproject" onclick=getViActProjectDetails()>&nbsp&nbspModel Inference Workflow</a>
                     <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#contact" role="tab" aria-controls="contact">Contact Information</a>
                 </div>
             </div>
             <div class="col-lg-9 border-start px-4" id="projectDetails">
               <div class="" id="resumeProjectDetails">
-                  <h2>Personal Resume Website</h2>
-                  <p>Hi!</p>
+                  <div>
+                    <h2 class="my-3">Personal Resume Website</h2>
+                    <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: November 2020<br>Latest Update: 2nd July, 2021</p>
+                  
+                  
+                    <h3>What's this Project for?</h3>
+                    <a href="https://github.com/sfwing1126/Personal-Resume-Website" target="_blank" class="btn btn-outline-dark py-1 mb-1 ms-3" tabindex="-1" role="button" aria-disabled="true">Go to GitHub</a>
+                    <p>This project aims to create my personal resume website for practicing my web development skills and for job hunting purpose.</p>
+                    
+                    <hr>
+                  </div>
+                  <div>
+                    <h3>Tech Stack Used?</h3>
+                    <p>All the skills used in this project are obtained through self-learning, they include:</p>
+                    <ul>
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>JavaScript</li>
+                      <li>Bootstrap5</li>
+                      <li>Git & GitHub</li>
+                    </ul>
+                    <hr>
+                  </div> 
+                  <div>
+                    <h3>Most Challenging Part of the Project?</h3>
+                    <p>The most challenging part would probably be making the website responsive. In the beginning of the 
+                      project, I felt a bit frustrated on understanding and applying the concepts of media queries, and 
+                      responsive layout. After searching for explanations in YouTube and reading through tutorials in 
+                      W3Schools, I’ve felt a lot more comfortable with the concepts. In the actual coding, I’ve made use of 
+                      Bootstrap5 framework to easily manipulate the layout, for example hiding elements in the navigation bar 
+                      when the screen size is small or adjusting the number of columns on the webpage as the screen size 
+                      changes. It was good to see myself starting from scratch to create a website that I think is good looking 
+                      and be able to record my career journey with a personalized site. I found all the challenges that I faced 
+                      in the project helped me to grow my skills and knowledge in web development!</p>
+                    <hr>
+                  </div>
               </div>
               <div class="d-none" id="challengerDetails">
-                <h2>Challenger - Task Tracking Mobile Application</h2>
-                <p>Hi Again!</p>
+                <h2 class="my-3">Challenger - Task Tracking Mobile Application</h2>
+                <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: April 2021<br>Latest Update: June 2021</p>
+                <div>
+                  <h3>What's this Project for?</h3>
+                  <a href="https://gitlab.com/inspire5/challenger/-/boards" target="_blank" class="btn btn-outline-dark py-1 mb-1 ms-3" tabindex="-1" role="button" aria-disabled="true">Go to GitLab</a>
+                  <p>
+                    This project started for the purpose of getting hands-on experience on mobile application development, and for understanding
+                    about the concepts in software engineering. This project is guided by real software engineers in Credit Suisse and is the project
+                    for the INSPIRE Women in Technology Program that I've joined from April to June in 2021. 
+                  </p>
+                  <p>
+                    The project aims to create a task tracking mobile application (i.e. a TO-DO App) that have a login screen and a task screen. The
+                    login screen allows user input validation, and the task screen enables task storage. Here's a simple demo to it: 
+                    <span><a href="https://www.youtube.com/watch?v=726Rgcu0mYA" target="_blank">Go to YouTube</a></span>
+                  </p>
+                  
+                  <hr>
+                </div>
+                <div>
+                  <h3>Tech Stack Used?</h3>
+                  <p>Mentored by Dave and Waqas as mentioned in 
+                    <a href="https://sfwing1126.github.io/Personal-Resume-Website/#otherexperience" target="_blank">my Resume Page</a>
+                    , and through self-learning, the following tech stack are used in the project:</p>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>React/React Native</li>
+                    <li>Expo</li>
+                    <li>SQLite</li>
+                    <li>Git & GitLab</li>
+                    <li>CI/CD Pipeline</li>
+                    <li>Sprint</li>
+                    <li>Debugging</li>
+                  </ul>
+                  <hr>
+                </div> 
+                <div>
+                  <h3>Most Challenging Part of the Project?</h3>
+                  <p>The biggest challenge that I’ve faced in that 2 months was probably when I tried to use SQLite to
+                    store the tasks that user input to a database. I’d spent so much time writing the code, debugging what’s 
+                    wrong with my program. It was really frustrating for that 2 weeks. I just kept getting errors, getting 
+                    warnings, and the App just didn’t work as expected at all. I got really stuck and didn’t know how to fix it. 
+                    And so I’ve tried to ask for help from Dave and Waqas who are my mentor and buddy,
+                    and they just guided me through it, reviewing my code, showing me how we could do the trials and
+                    errors, figuring out which part of the code was wrong by commenting some parts out(i.e. the debugging mindset) 
+                    and also, they’ve explained some new concepts (e.g. Promises,
+                    Async Functions) which I found it quite difficult to understand and also some common practices (e.g. normally
+                    how data are stored by a developer). And in the end, everything worked well, and I really enjoyed that feeling of
+                    satisfaction. I hope I could have more opportunities to try using database in my projects!</p>
+                  <hr>
+                </div>
               </div>
               <div class="d-none" id="viActDetails">
-                <h2>Model Inference Workflow</h2>
-                <p>Hi Again and Again!</p>
+                <h2 class="my-3">Model Inference Workflow</h2>
+                <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: April 2021<br>Project End Date: May 2021</p>
+                <div>
+                  <h3>What's this Project for?</h3>
+                  <a href="https://github.com/sfwing1126/task_1.git" target="_blank" class="btn btn-outline-dark py-1 mb-1 ms-3" tabindex="-1" role="button" aria-disabled="true">Go to GitHub</a>
+                  <p>
+                    This project is assigned by viAct.ai AI Engineer as my internship task. I was given a classification model file in onnx format, 
+                    and was asked to create a model inference workflow in Python. 
+                  </p>
+                  <p>
+                    In the code, I've created a function that takes in an image of a person, preprocess it to the required format, 
+                    pass it to the classification model, and apply a softmax function on the output which represents the probabilities 
+                    of a person wearing a helmet, a person without helmet, and undetermined respectively.
+                  </p>
+                  <p>
+                    In addition to that, I've created a task scheduled at 2am every day using Prefect, which it would first look at 
+                    the user-specific directories where all the images are located, then perform inference on each of the images found 
+                    in the directory with the function created, and save the inference results in json format. And in the end, it would 
+                    move all the processed images to user-specific directories after the inference.
+                  </p>
+                  <hr>
+                </div>
+                <div>
+                  <h3>Tech Stack Used?</h3>
+                  <p>In the beginning of this project, I know only some basics of Python, and had no knowledge about onnx, and libraries 
+                    like prefect, json, os, pathlib, etc. I started all of them from reading through the documentations, and tried to 
+                    figure out the code individually. The full list of tech stack used are as shown below: 
+                  </p>
+                  <ul>
+                    <li>Python</li>
+                    <li>Onnxruntime</li>
+                    <li>Prefect</li>
+                    <li>JSON</li>
+                    <li>Keras</li>
+                    <li>Skimage</li>
+                    <li>Numpy</li>
+                    <li>Os</li>
+                    <li>Pathlib</li>
+                    <li>Datetime</li>
+                  </ul>
+                  <hr>
+                </div> 
+                <div>
+                  <h3>Most Challenging Part of the Project?</h3>
+                  <p>I found all parts of it challenging since I had totally no idea what I should do as I received the task from 
+                    my supervisor. Many of the tools mentioned in the task description are new to me, and I started all from scratch 
+                    with the fear of asking for help from my supervisor (since they asked me not to ask stupid questions). Thus, I 
+                    was really lost at that time, but eventually, after deviding it into smaller parts (e.g. learning about onnxruntime first, 
+                    then prefect, then file import and export, ...), I was able to find out a solution for the problem, and accomplished 
+                    the task in the end. I found it a very fruitful learning experience!
+                  </p>
+                  <hr>
+                </div>
               </div>
             </div>
         </div>
