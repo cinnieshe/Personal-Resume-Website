@@ -36,6 +36,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./assets/pages/projects.html">My Projects</a>
                         </li>
+                        <li class="nav-item d-lg-none">
+                          <a class="nav-link" href="#myprojects">&nbsp&nbspPersonal Resume Website</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                          <a class="nav-link" href="#myprojects">&nbsp&nbspChallenger - Task Tracking Mobile Application</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                          <a class="nav-link" href="#myprojects">&nbsp&nbspModel Inference Workflow</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             My Learnings
@@ -45,9 +54,6 @@
                             <li><a class="dropdown-item" href="#">CSS3</a></li>
                             <li><a class="dropdown-item" href="#">JavaScript</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="#myprojects">My Projects</a>
                         </li>
                         <li class="nav-item d-lg-none">
                             <a class="nav-link" href="#contact">Contact Information</a>
@@ -107,11 +113,25 @@
                     <span class="list-group-item list-group-item-light py-3" aria-controls="menu">Menu</span>
                     <a class="list-group-item list-group-item-action active list-group-item-secondary" href="#" role="tab" aria-controls="home">Home</a>
                     <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#myprojects" role="tab" aria-controls="myprojects">My Projects</a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#myprojects" role="tab" aria-controls="myprojects" onclick=getResumeProjectDetails()>&nbsp&nbspPersonal Resume Website</a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#myprojects" role="tab" aria-controls="myprojects" onclick=getChallengerProjectDetails()>&nbsp&nbspChallenger - Task Tracking Mobile Application</a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#myprojects" role="tab" aria-controls="myprojects" onclick=getViActProjectDetails()>&nbsp&nbspModel Inference Workflow</a>
                     <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#contact" role="tab" aria-controls="contact">Contact Information</a>
                 </div>
             </div>
-            <div class="col-lg-9 border-start px-4">
-                <h2>My Projects</h2>
+            <div class="col-lg-9 border-start px-4" id="projectDetails">
+              <div class="" id="resumeProjectDetails">
+                  <h2>Personal Resume Website</h2>
+                  <p>Hi!</p>
+              </div>
+              <div class="d-none" id="challengerDetails">
+                <h2>Challenger - Task Tracking Mobile Application</h2>
+                <p>Hi Again!</p>
+              </div>
+              <div class="d-none" id="viActDetails">
+                <h2>Model Inference Workflow</h2>
+                <p>Hi Again and Again!</p>
+              </div>
             </div>
         </div>
     </body>
@@ -132,6 +152,8 @@
         </div>
     </footer>
 
+    <script src="projects.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="../BS5/js/bootstrap.js"></script>
+    
 </html>
