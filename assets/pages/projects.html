@@ -57,7 +57,7 @@
                             <a class="nav-link" href="#contact">Contact Information</a>
                         </li>
                     </ul>
-                    <form class="d-flex" method="get" action="./assets/SheFongWing_Resume.pdf">
+                    <form class="d-flex" method="get" action="../SheFongWing_Resume.pdf">
                       <button class="btn btn-secondary" type="submit">Download Resume</button>
                     </form>
                   </div>
@@ -69,6 +69,7 @@
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -90,6 +91,13 @@
                     <div class="carousel-caption">
                       <h5>Model Inference Workflow</h5>
                       <p class="carousel-caption-description d-none d-md-block">In my internship in viAct.ai, I've tried to use Python with the Prefect Library to create a model inference workflow to store AI model results in a local directory!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/HangmanProject.JPG" class="d-block w-100" alt="HangmanProject">
+                    <div class="carousel-caption">
+                      <h5>Hangman Project</h5>
+                      <p class="carousel-caption-description d-none d-md-block">In the FDM Group Women in Tech Bootcamp, I have learnt Python and wrote a hangman game from scratch!</p>
                     </div>
                   </div>
                 </div>
@@ -114,6 +122,7 @@
                     <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="resumeproject" onclick=getResumeProjectDetails()>&nbsp&nbspPersonal Resume Website</a>
                     <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="challengerproject" onclick=getChallengerProjectDetails()>&nbsp&nbspChallenger - Task Tracking Mobile Application</a>
                     <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="viActproject" onclick=getViActProjectDetails()>&nbsp&nbspModel Inference Workflow</a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="viActproject" onclick=getHangmanProjectDetails()>&nbsp&nbspHangman Project</a>
                     <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#contact" role="tab" aria-controls="contact">Contact Information</a>
                 </div>
             </div>
@@ -161,7 +170,7 @@
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: April 2021<br>Latest Update: June 2021</p>
                 <div>
                   <h3>What's this Project for?</h3>
-                  <a href="https://gitlab.com/inspire5/challenger/-/boards" target="_blank" class="btn btn-outline-dark py-1 mb-1 ms-3" tabindex="-1" role="button" aria-disabled="true">Go to GitLab</a>
+                  <a href="https://gitlab.com/inspire5/challenger/-/tree/main" target="_blank" class="btn btn-outline-dark py-1 mb-1 ms-3" tabindex="-1" role="button" aria-disabled="true">Go to GitLab</a>
                   <p>
                     This project started for the purpose of getting hands-on experience on mobile application development, and for understanding
                     about the concepts in software engineering. This project is guided by real software engineers in Credit Suisse and is the project
@@ -259,6 +268,43 @@
                     was really lost at that time, but eventually, after deviding it into smaller parts (e.g. learning about onnxruntime first, 
                     then prefect, then file import and export, ...), I was able to find out a solution for the problem, and accomplished 
                     the task in the end. I found it a very fruitful learning experience!
+                  </p>
+                  <hr>
+                </div>
+              </div>
+              <div class="d-none" id="HangmanDetails">
+                <h2 class="my-3">Hangman Project - Python</h2>
+                <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: 11th August 2021<br>Project End Date: 13th August 2021</p>
+                <div>
+                  <h3>What's this Project for?</h3>
+                  <a href="https://github.com/sfwing1126/Hangman" target="_blank" class="btn btn-outline-dark py-1 mb-1 ms-3" tabindex="-1" role="button" aria-disabled="true">Go to GitHub</a>
+                  <p>
+                    This project was done in my coding bootcamp organized by the FDM Group. It enables me to consolidate my Python knowledge learnt in university
+                    and also that from the bootcamp. 
+                  </p>
+                  <p>
+                    In the game, there are 3 difficulty levels, easy, medium, and hard, with fewer lives accordingly. Player 1 would write down a word 
+                    for Player 2 to guess, and player 2 would guess it until his/her lives are all used up. I've used the Python library 'turtle' to 
+                    create a graphical interface for a better gaming experience for the users. Here's a simple demo to it: 
+                    <span><a href="https://youtu.be/Vw_IEXUaXbI" target="_blank">Go to YouTube</a></span>
+                  </p>
+                  
+                  <hr>
+                </div>
+                <div>
+                  <h3>Tech Stack Used?</h3>
+                  <ul>
+                    <li>Python</li>
+                    <li>Python Library: turtle</li>
+                    <li>Python Library: time</li>
+                  </ul>
+                  <hr>
+                </div> 
+                <div>
+                  <h3>Most Challenging Part of the Project?</h3>
+                  <p>The biggest challenge of this project was to create a graphical interface using turtle. It was hard to 
+                    know which coordinates the turtle has to goto in order to create a good looking interface. In the end, I 
+                    managed to do it by first designing the graphics on a graph paper online, and code it accordingly. 
                   </p>
                   <hr>
                 </div>
