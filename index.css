@@ -57,12 +57,13 @@ blockquote{
 
 .python {width: 50%; background-color: #57d8e9;}
 .cpp{width: 40%; background-color: #6091eb;}
+.java{width: 35%; background-color: #cfc8fa;}
 .html5 {width: 80%; background-color: #36f155;}
 .css3 {width: 65%; background-color: #f7473a;}
 .js {width: 50%; background-color: #f397ee;}
-.bootstrap5 {width: 60%; background-color: #f0de3b;}
+.bootstrap5 {width: 70%; background-color: #f0de3b;}
 .git{width: 60%; background-color: #95f39a;}
-.react{width: 40%; background-color: #ebaf60;}
+.react{width: 30%; background-color: #ebaf60;}
 .sqlite{width: 10%; background-color: #18366e;}
 .r {width: 5%; background-color: #9560eb;}
 .vba {width: 5%; background-color: #f6ffa2;}
