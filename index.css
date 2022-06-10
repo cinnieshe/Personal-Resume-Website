@@ -55,9 +55,15 @@ blockquote{
 .putonghua {width: 75%; background-color: #f44336;}
 .japanese {width: 25%; background-color: #808080;}
 
-.python {width: 50%; background-color: #57d8e9;}
-.cpp{width: 40%; background-color: #6091eb;}
-.java{width: 35%; background-color: #cfc8fa;}
+.python {width: 65%; background-color: #57d8e9;}
+.pyspark {width: 50%; background-color: #44e3d9;}
+.cpp {width: 65%; background-color: #6091eb;}
+.java {width: 35%; background-color: #cfc8fa;}
+.sql {width: 50%; background-color: #bc5689;}
+.excel {width: 65%; background-color: #401b7b;}
+.aws {width: 8%; background-color: #c0f238;}
+.tensorflow {width: 10%; background-color: #ec9c34;}
+.keras {width: 10%; background-color: #135652;}
 .html5 {width: 80%; background-color: #36f155;}
 .css3 {width: 65%; background-color: #f7473a;}
 .js {width: 50%; background-color: #f397ee;}
@@ -66,8 +72,8 @@ blockquote{
 .react{width: 30%; background-color: #ebaf60;}
 .sqlite{width: 10%; background-color: #18366e;}
 .r {width: 5%; background-color: #9560eb;}
-.vba {width: 5%; background-color: #f6ffa2;}
-.tensorflow {width: 5%; background-color: #ec9c34;}
+.mips {width: 65%; background-color: #9ea562;}
+
 
 .bold{
     margin-top: 5px;
