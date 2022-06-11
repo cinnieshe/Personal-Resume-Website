@@ -12,3 +12,7 @@ h3 {
     float: right;
     text-align:right;
 }
+
+.list-font-family {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
