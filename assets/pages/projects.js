@@ -478,3 +478,46 @@ function getEC2ProjectDetails() {
         document.getElementById("ec2Details").classList.remove("d-none");
     }
 }
+
+function getFinBERTProjectDetails() {
+    if (!document.getElementById("challengerDetails").classList.contains("d-none")){
+        document.getElementById("challengerDetails").classList.add("d-none");
+    }
+    else if (!document.getElementById("viActDetails").classList.contains("d-none")){
+        document.getElementById("viActDetails").classList.add("d-none");
+    }
+    else if (!document.getElementById("HangmanDetails").classList.contains("d-none")){
+        document.getElementById("HangmanDetails").classList.add("d-none");
+    }
+    else if (!document.getElementById("courseLearningDetails").classList.contains("d-none")){
+        document.getElementById("courseLearningDetails").classList.add("d-none");
+    }
+    else if (!document.getElementById("sentimentAnalysisDetails").classList.contains("d-none")){
+        document.getElementById("sentimentAnalysisDetails").classList.add("d-none");
+    }
+    else if (!document.getElementById("networkMiningDetails").classList.contains("d-none")){
+        document.getElementById("networkMiningDetails").classList.add("d-none");
+    }
+    else if (!document.getElementById("ratingPredictionDetails").classList.contains("d-none")){
+        document.getElementById("ratingPredictionDetails").classList.add("d-none");
+    }
+    else if (!document.getElementById("powerPlantDetails").classList.contains("d-none")){
+        document.getElementById("powerPlantDetails").classList.add("d-none");
+    }
+    else if (!document.getElementById("covid19Details").classList.contains("d-none")){
+        document.getElementById("covid19Details").classList.add("d-none");
+    }
+    else if (!document.getElementById("mipsDetails").classList.contains("d-none")){
+        document.getElementById("mipsDetails").classList.add("d-none");
+    }
+    else if (!document.getElementById("ec2Details").classList.contains("d-none")){
+        document.getElementById("ec2Details").classList.add("d-none");
+    }
+    else if (!document.getElementById("resumeProjectDetails").classList.contains("d-none")){
+        document.getElementById("resumeProjectDetails").classList.add("d-none");
+    }
+    
+    if (document.getElementById("finBERTProjectDetails").classList.contains("d-none")){
+        document.getElementById("finBERTProjectDetails").classList.remove("d-none");
+    }
+}
