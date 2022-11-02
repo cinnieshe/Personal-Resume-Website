@@ -1,12 +1,14 @@
 .cover-photo{
     position:relative;
+    text-align: center;
+    color: white;
 }
 
 .text-box{
     position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -35%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: white;
 }
 
@@ -49,30 +51,33 @@ blockquote{
     padding-bottom: 10px;
     color: white;
 }
-  
-.cantonese {width: 100%; background-color: #4CAF50;}
-.english {width: 75%; background-color: #2196F3;}
-.putonghua {width: 75%; background-color: #f44336;}
-.japanese {width: 25%; background-color: #808080;}
 
-.python {width: 65%; background-color: #57d8e9;}
-.pyspark {width: 50%; background-color: #44e3d9;}
-.cpp {width: 65%; background-color: #6091eb;}
-.java {width: 35%; background-color: #cfc8fa;}
-.sql {width: 50%; background-color: #bc5689;}
-.excel {width: 65%; background-color: #401b7b;}
-.aws {width: 8%; background-color: #c0f238;}
-.tensorflow {width: 10%; background-color: #ec9c34;}
-.keras {width: 10%; background-color: #135652;}
-.html5 {width: 80%; background-color: #36f155;}
-.css3 {width: 65%; background-color: #f7473a;}
-.js {width: 50%; background-color: #f397ee;}
-.bootstrap5 {width: 70%; background-color: #f0de3b;}
-.git{width: 60%; background-color: #95f39a;}
-.react{width: 30%; background-color: #ebaf60;}
-.sqlite{width: 10%; background-color: #18366e;}
-.r {width: 5%; background-color: #9560eb;}
-.mips {width: 65%; background-color: #9ea562;}
+.fly-in-image { animation: fly-img 0.5s linear; }
+.fly-in-text { animation: fly-text 0.5s linear; }
+
+@keyframes fly-img {
+    0%{
+        transform: translate(-100vh, 0);opacity: .5;
+    }
+    50%{
+        transform: translate(-50vh, 0);opacity: .75;
+    }
+    100%{
+        transform: translate(0,0);opacity: 1;
+    }
+}
+
+@keyframes fly-text {
+    0%{
+        transform: translate(-50%, 50%);opacity: .5;
+    }
+    50%{
+        transform: translate(-50%,0%);opacity: .75;
+    }
+    100%{
+        transform: translate(-50%,-50%);opacity: 1;
+    }
+}
 
 
 .bold{
@@ -90,10 +95,23 @@ blockquote{
         transform: translate(-50%, -15%);
     }
 
+    @keyframes fly-text {
+        0%{
+            transform: translate(-50%, 65%);opacity: .5;
+        }
+        50%{
+            transform: translate(-50%,25%);opacity: .75;
+        }
+        100%{
+            transform: translate(-50%,-15%);opacity: 1;
+        }
+    }
+
     .photo{
         display:block;
         margin-left:auto;
         margin-right:auto;
+        width: 200px;
     }
 
     .navtitle{
