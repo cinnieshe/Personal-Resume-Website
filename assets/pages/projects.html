@@ -37,43 +37,46 @@
                             <a class="nav-link" href="#">My Projects</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getFinBERTProjectDetails()>&nbsp&nbspFinBERT Research Project - NLP</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("finBERTDetails")>&nbsp&nbspFinBERT Research Project - NLP</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getCovid19ProjectDetails()>&nbsp&nbspCOVID-19 Big Data Analysis - PySpark</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("musicFlipDetails")>&nbsp&nbspMusic Flip: Computer Vision Android App - CV/Android</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getEC2ProjectDetails()>&nbsp&nbspAWS EC2 Measurement</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("sentimentAnalysisDetails")>&nbsp&nbspSentiment Analysis - Machine Learning</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getSentimentAnalysisProjectDetails()>&nbsp&nbspSentiment Analysis - Machine Learning</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("networkMiningDetails")>&nbsp&nbspSocial Network Mining - Machine Learning</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getNetworkMiningProjectDetails()>&nbsp&nbspSocial Network Mining - Machine Learning</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("ratingPredictionDetails")>&nbsp&nbspRating Prediction - Machine Learning</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getRatePredictionProjectDetails()>&nbsp&nbspRating Prediction - Machine Learning</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("powerPlantDetails")>&nbsp&nbspPower Plant ML Pipeline - Spark</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getPowerPlantProjectDetails()>&nbsp&nbspPower Plant ML Pipeline - Spark</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("covid19Details")>&nbsp&nbspCOVID-19 Big Data Analysis - PySpark</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getChallengerProjectDetails()>&nbsp&nbspChallenger - Task Tracking Mobile Application</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("ec2Details")>&nbsp&nbspAWS EC2 Measurement - Cloud Computing</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getViActProjectDetails()>&nbsp&nbspModel Inference Workflow</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("challengerDetails")>&nbsp&nbspChallenger: Task Tracking Mobile Application - JS/React/SQLite</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getResumeProjectDetails()>&nbsp&nbspPersonal Resume Website</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("viActDetails")>&nbsp&nbspModel Inference Workflow - Python/onnxruntime</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getCourseLearningProjectDetails()>&nbsp&nbspCourse Learning 2022 App - Android</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("resumeProjectDetails")>&nbsp&nbspPersonal Resume Website - HTML5/CSS3/JS/Bootstrap5</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getMipsProjectDetails()>&nbsp&nbspNS-Shaft Game - MIPS</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("courseLearningDetails")>&nbsp&nbspCourse Learning 2022 App - Android</a>
                         </li>
                         <li class="nav-item d-lg-none">
-                          <a class="nav-link" href="#myprojects" onclick=getHangmanProjectDetails()>&nbsp&nbspHangman Project - Python</a>
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("mipsDetails")>&nbsp&nbspNS-Shaft Game - MIPS</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                          <a class="nav-link" href="#myprojects" onclick=switchPage("HangmanDetails")>&nbsp&nbspHangman Project - Python</a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -109,6 +112,7 @@
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
                 </div>
                 <!-- Processing Image: https://pixlr.com/tw/x/#home && https://pinetools.com/darken-image -->
                 <div class="carousel-inner">
@@ -120,17 +124,10 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="../images/Covid19Project.jpg" class="d-block w-100" alt="Covid19Project">
+                    <img src="../images/MusicFlipProject.jpg" class="d-block w-100" alt="MusicFlipProject">
                     <div class="carousel-caption">
-                      <h5>COVID-19 Big Data Analysis - PySpark</h5>
-                      <p class="carousel-caption-description d-none d-md-block">Using Pyspark to perform big data analysis with Databricks on world COVID-19 data to gain insights on current pandemic situations!</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/EC2Project.jpg" class="d-block w-100" alt="EC2Project">
-                    <div class="carousel-caption">
-                      <h5>AWS EC2 Measurement</h5>
-                      <p class="carousel-caption-description d-none d-md-block">Measuring CPU, memory, and network performances of different AWS EC2 instances!</p>
+                      <h5>Music Flip: Computer Vision Android App - CV/Android</h5>
+                      <p class="carousel-caption-description d-none d-md-block">Developing an Android application that uses Computer Vision to help users flip sheet music with head gesture</p>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -159,6 +156,20 @@
                     <div class="carousel-caption">
                       <h5>Power Plant Machine Learning Pipeline - Spark</h5>
                       <p class="carousel-caption-description d-none d-md-block">Explore data & training and tuning Linear Regression, Decision Tree Regression, and Random Forest Tree models for predicting power output!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/Covid19Project.jpg" class="d-block w-100" alt="Covid19Project">
+                    <div class="carousel-caption">
+                      <h5>COVID-19 Big Data Analysis - PySpark</h5>
+                      <p class="carousel-caption-description d-none d-md-block">Using Pyspark to perform big data analysis with Databricks on world COVID-19 data to gain insights on current pandemic situations!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/EC2Project.jpg" class="d-block w-100" alt="EC2Project">
+                    <div class="carousel-caption">
+                      <h5>AWS EC2 Measurement</h5>
+                      <p class="carousel-caption-description d-none d-md-block">Measuring CPU, memory, and network performances of different AWS EC2 instances!</p>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -222,24 +233,25 @@
                     <span class="list-group-item list-group-item-light py-3" aria-controls="menu">Menu</span>
                     <a class="list-group-item list-group-item-action active list-group-item-secondary" href="#" role="tab" aria-controls="home">Home</a>
                     <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#projectDetails" role="tab" aria-controls="myprojects">My Projects</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="finbertproject" onclick=getFinBERTProjectDetails()>&nbsp&nbspFinBERT Research Project - NLP</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="covid19project" onclick=getCovid19ProjectDetails()>&nbsp&nbspCOVID-19 Big Data Analysis - PySpark</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="ec2project" onclick=getEC2ProjectDetails()>&nbsp&nbspAWS EC2 Measurement</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="sentimentanalysisproject" onclick=getSentimentAnalysisProjectDetails()>&nbsp&nbspSentiment Analysis - Machine Learning</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="networkminingproject" onclick=getNetworkMiningProjectDetails()>&nbsp&nbspSocial Network Mining - Machine Learning</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="ratepredictionproject" onclick=getRatePredictionProjectDetails()>&nbsp&nbspRating Prediction - Machine Learning</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="powerplantproject" onclick=getPowerPlantProjectDetails()>&nbsp&nbspPower Plant ML Pipeline - Spark</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="challengerproject" onclick=getChallengerProjectDetails()>&nbsp&nbspChallenger - Task Tracking Mobile Application</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="viActproject" onclick=getViActProjectDetails()>&nbsp&nbspModel Inference Workflow</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="resumeproject" onclick=getResumeProjectDetails()>&nbsp&nbspPersonal Resume Website</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="courselearningproject" onclick=getCourseLearningProjectDetails()>&nbsp&nbspCourse Learning 2022 App - Android</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="mipsproject" onclick=getMipsProjectDetails()>&nbsp&nbspNS-Shaft Game - MIPS</a>
-                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="hangmanproject" onclick=getHangmanProjectDetails()>&nbsp&nbspHangman Project</a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="finbertproject" onclick=switchPage("finBERTDetails")>&nbsp&nbsp1. FinBERT Research Project - <b>NLP</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="finbertproject" onclick=switchPage("musicFlipDetails")>&nbsp&nbsp2. Music Flip: Computer Vision Android App - <b>Computer Vision/Android</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="sentimentanalysisproject" onclick=switchPage("sentimentAnalysisDetails")>&nbsp&nbsp3. Sentiment Analysis - <b>Machine Learning</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="networkminingproject" onclick=switchPage("networkMiningDetails")>&nbsp&nbsp4. Social Network Mining - <b>Machine Learning</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="ratepredictionproject" onclick=switchPage("ratingPredictionDetails")>&nbsp&nbsp5. Rating Prediction - <b>Machine Learning</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="powerplantproject" onclick=switchPage("powerPlantDetails")>&nbsp&nbsp6. Power Plant ML Pipeline - <b>Spark</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="covid19project" onclick=switchPage("covid19Details")>&nbsp&nbsp7. COVID-19 Big Data Analysis - <b>PySpark</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="ec2project" onclick=switchPage("ec2Details")>&nbsp&nbsp8. AWS EC2 Measurement - <b>Cloud Computing</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="challengerproject" onclick=switchPage("challengerDetails")>&nbsp&nbsp9. Challenger: Task Tracking Mobile Application - <b>JS/React/SQLite</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="viActproject" onclick=switchPage("viActDetails")>&nbsp&nbsp10. Model Inference Workflow - <b>Python/onnxruntime</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="resumeproject" onclick=switchPage("resumeProjectDetails")>&nbsp&nbsp11. Personal Resume Website - <b>HTML5/CSS3/JS/Bootstrap5</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="courselearningproject" onclick=switchPage("courseLearningDetails")>&nbsp&nbsp12. Course Learning 2022 App - <b>Android</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="mipsproject" onclick=switchPage("mipsDetails")>&nbsp&nbsp13. NS-Shaft Game - <b>MIPS</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-secondary"   role="tab" aria-controls="hangmanproject" onclick=switchPage("HangmanDetails")>&nbsp&nbsp14. Hangman Project - <b>Python</b></a>
                     <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#contact" role="tab" aria-controls="contact">Contact Information</a>
                 </div>
             </div>
             <div class="col-lg-9 border-start px-4" id="projectDetails">
-              <div class="d-none" id="resumeProjectDetails">
+              <div class="d-none px-4" id="resumeProjectDetails">
                   <div>
                     <h2 class="my-3">Personal Resume Website</h2>
                     <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: November 2020<br>Latest Update: 11th June, 2022</p>
@@ -277,7 +289,7 @@
                       in the project helped me to grow my skills and knowledge in web development!</p>
                   </div>
               </div>
-              <div class="d-none" id="challengerDetails">
+              <div class="d-none px-4" id="challengerDetails">
                 <h2 class="my-3">Challenger - Task Tracking Mobile Application</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: April 2021<br>Latest Update: June 2021</p>
                 <div>
@@ -329,7 +341,7 @@
                     satisfaction. I hope I could have more opportunities to try using databases in my projects!</p>
                 </div>
               </div>
-              <div class="d-none" id="viActDetails">
+              <div class="d-none px-4" id="viActDetails">
                 <h2 class="my-3">Model Inference Workflow</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: April 2021<br>Project End Date: May 2021</p>
                 <div>
@@ -383,7 +395,7 @@
                   </p>
                 </div>
               </div>
-              <div class="d-none" id="HangmanDetails">
+              <div class="d-none px-4" id="HangmanDetails">
                 <h2 class="my-3">Hangman Project - Python</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: 11th August 2021<br>Project End Date: 13th August 2021</p>
                 <div>
@@ -421,7 +433,7 @@
                   </p>
                 </div>
               </div>
-              <div class="d-none" id="courseLearningDetails">
+              <div class="d-none px-4" id="courseLearningDetails">
                 <h2 class="my-3">Course Learning 2022 App - Android</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: February 2022<br>Project End Date: March 2022</p>
                 <div>
@@ -459,7 +471,7 @@
                   </p>
                 </div>
               </div>
-              <div class="d-none" id="sentimentAnalysisDetails">
+              <div class="d-none px-4" id="sentimentAnalysisDetails">
                 <h2 class="my-3">Sentiment Analysis - Machine Learning</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: March 2022<br>Project End Date: April 2022</p>
                 <div>
@@ -510,7 +522,7 @@
                   </p>
                 </div>
               </div>
-              <div class="d-none" id="networkMiningDetails">
+              <div class="d-none px-4" id="networkMiningDetails">
                 <h2 class="my-3">Social Network Mining - Machine Learning</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: April 2022<br>Project End Date: April 2022</p>
                 <div>
@@ -584,7 +596,7 @@
                   </p>
                 </div>
               </div>
-              <div class="d-none" id="ratingPredictionDetails">
+              <div class="d-none px-4" id="ratingPredictionDetails">
                 <h2 class="my-3">Rating Prediction - Machine Learning</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: May 2022<br>Project End Date: May 2022</p>
                 <div>
@@ -633,7 +645,7 @@
                   </p>
                 </div>
               </div>
-              <div class="d-none" id="powerPlantDetails">
+              <div class="d-none px-4" id="powerPlantDetails">
                 <h2 class="my-3">Power Plant Machine Learning Pipeline - Spark</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: April 2022<br>Latest Update: April 2022</p>
                 <div>
@@ -717,7 +729,7 @@
                   </p>
                 </div>
               </div>
-              <div class="d-none" id="covid19Details">
+              <div class="d-none px-4" id="covid19Details">
                 <h2 class="my-3">COVID-19 Big Data Analysis - PySpark</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: April 2022<br>Project End Date: May 2022</p>
                 <div>
@@ -762,7 +774,7 @@
                   </p>
                 </div>
               </div>
-              <div class="d-none" id="mipsDetails">
+              <div class="d-none px-4" id="mipsDetails">
                 <h2 class="my-3">NS-Shaft Game - MIPS</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: May 2022<br>Project End Date: May 2022</p>
                 <div>
@@ -792,7 +804,7 @@
                   </p>
                 </div>
               </div>
-              <div class="d-none" id="ec2Details">
+              <div class="d-none px-4" id="ec2Details">
                 <h2 class="my-3">AWS EC2 Measurement</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: March 2022<br>Project End Date: March 2022</p>
                 <div>
@@ -835,7 +847,7 @@
                   </p>
                 </div>
               </div>
-              <div class="" id="finBERTDetails">
+              <div class="px-4" id="finBERTDetails">
                 <h2 class="my-3">FinBERT Research Project - NLP</h2>
                 <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: June 2022<br>Project End Date: August 2022</p>
                 <div>
@@ -883,6 +895,40 @@
                     solution was simple, but it has led me to do a lot of research on the BERT model, and gain some basic knowledge about it. It was a 
                     rewarding learning process and I enjoyed a lot!
                   </p>
+                </div>
+              </div>
+              <div class="d-none px-4" id="musicFlipDetails">
+                <h2 class="my-3">Music Flip: Computer Vision Android App - CV/Android</h2>
+                <a href="https://lnkd.in/gbSvmaVC" target="_blank" class="btn btn-outline-dark py-1 mb-1 ms-3" tabindex="-1" role="button" aria-disabled="true">Go to Google Play</a>
+                <p class="date-right-align border px-2 py-2 my-0 ms-2">Project Start Date: June 2022<br>Project End Date: August 2022</p>
+                <div>
+                  <h3>What's this Project for?</h3>
+                  <p>
+                    This is a commercial project that I have developed through collaborating with our HKUST RMBI + COSC alumnus Hayden Chiu during the summer of 2022. 
+                    The project aims to facilitates musicians to flip their sheet music during their musical performance without the need to bother flipping it 
+                    by hand while worrying about how this would affect their performance. It makes use of the Computer Vision technology to enable users flipping 
+                    their sheet music by simple head gesture like nodding head or winking eyes.
+                  </p>
+                  <p>
+                    I was responsible for the settings page, icon, splash screen, and notification layouts and functionalities. In particular, I have had practical 
+                    experience in using the PreferenceScreen, setting locale, themes, sending intent, etc. On the other hand, I am also responsible for collecting data 
+                    related to head gesture, for the training of machine learning model. Although I was not responsible for the model training part, but we have meetings 
+                    sharing our development process with each other for learning purpose. It was a great learning experience, and I have learnt the whole process of embedding 
+                    computer vision technologies to android mobile application development, from data collection, to training models, and deployment. It was fun, and I 
+                    really appreciate him for inviting me to this interesting project!
+                  </p>
+                  <hr>
+                </div>
+                <div>
+                  <h3>Tech Stack Used?</h3>
+                  <p></p>
+                  <ul class="list-font-family">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Android Development</li>
+                    <li>Git/GitHub</li>
+                  </ul>
+                  <hr>
                 </div>
               </div>
         </div>
