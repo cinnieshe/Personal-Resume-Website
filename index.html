@@ -38,28 +38,28 @@
                         <a class="nav-link" href="./assets/pages/projects.html">My Projects</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="#profile">Profile</a>
+                        <a class="nav-link" href="#profile" onclick=switchPage(0)>Profile</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="#education">My Education</a>
+                        <a class="nav-link" href="#education" onclick=switchPage(1)>My Education</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="#workexperience">Work Experience</a>
+                        <a class="nav-link" href="#workexperience" onclick=switchPage(2)>Work Experience</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="#otherexperience">Other Experience</a>
+                        <a class="nav-link" href="#otherexperience" onclick=switchPage(3)>Other Experience</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="#certificates">Certificates</a>
+                        <a class="nav-link" href="#certificates" onclick=switchPage(4)>Certificates</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="#abilities">Abilities</a>
+                        <a class="nav-link" href="#abilities" onclick=switchPage(5)>Abilities</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="#extraactivities">Extracurricular Activities</a>
+                        <a class="nav-link" href="#extraactivities" onclick=switchPage(6)>Extracurricular Activities</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="#hobbies">My Hobbies</a>
+                        <a class="nav-link" href="#hobbies" onclick=switchPage(7)>My Hobbies</a>
                     </li>
                     <li class="nav-item d-lg-none">
                         <a class="nav-link" href="#contact">Contact Information</a>
@@ -88,72 +88,62 @@
         <div class="col-lg-3 d-none d-lg-block pe-0">
             <div class="list-group sidebar" id="list-tab" role="tablist">
                 <span class="list-group-item list-group-item-light py-3" aria-controls="menu">Menu</span>
-                <a class="list-group-item list-group-item-action active list-group-item-secondary" href="#" role="tab" aria-controls="home">Home</a>
-                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#profile" role="tab" aria-controls="profile">Profile</a>
-                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#education" role="tab" aria-controls="education">My Education</a>
-                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#workexperience" role="tab" aria-controls="workexperience">Work Experience</a>
-                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#otherexperience" role="tab" aria-controls="otherexperience">Other Experience</a>
-                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#certificates" role="tab" aria-controls="certificates">Certificates</a>
-                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#abilities" role="tab" aria-controls="abilities">Abilities</a>
-                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#extraactivities" role="tab" aria-controls="extraactivities">Extracurricular Activities</a>
-                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#hobbies" role="tab" aria-controls="abilities">My Hobbies</a>
+                <a class="list-group-item list-group-item-action active list-group-item-secondary" href="#" role="tab" aria-controls="home" onclick=switchPage(0)>Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#profile" role="tab" aria-controls="profile" onclick=switchPage(0)>Profile</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#education" role="tab" aria-controls="education" onclick=switchPage(1)>My Education</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#workexperience" role="tab" aria-controls="workexperience" onclick=switchPage(2)>Work Experience</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#otherexperience" role="tab" aria-controls="otherexperience" onclick=switchPage(3)>Other Experience</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#certificates" role="tab" aria-controls="certificates" onclick=switchPage(4)>Certificates</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#abilities" role="tab" aria-controls="abilities" onclick=switchPage(5)>Abilities</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#extraactivities" role="tab" aria-controls="extraactivities" onclick=switchPage(6)>Extracurricular Activities</a>
+                <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#hobbies" role="tab" aria-controls="abilities" onclick=switchPage(7)>My Hobbies</a>
                 <a class="list-group-item list-group-item-action list-group-item-secondary"   href="#contact" role="tab" aria-controls="contact">Contact Information</a>
             </div>
         </div>
         <div class="col-lg-9 border-start px-4">
-            <div class="my-3">
-                <div>
-                    <img class="float-lg-end mx-lg-5 border photo" src="./assets/images/Photo.jpeg" width="325" alt="my photo">
+            <div class="" id="profile-page">
+                <div class="my-3">
+                    <div>
+                        <img class="float-lg-end mx-lg-5 border photo" src="./assets/images/Photo.jpeg" width="325" alt="my photo">
+                    </div>
+                    <h2 id="profile">PROFILE</h2>
+                    <p class="text-center">Final Year HKUST student in RMBI + COSC Major</p>
+                    <p>
+                        Hi! This is Cinnie. Thank you for coming to my website. This website is coded from scratch 
+                        by me with self-learnt HTML5, CSS3, and Bootstrap5, and it is responsive! I’m currently a final 
+                        year bachelor degree student in HKUST, majoring in Risk Management and Business Intelligence (RMBI) & Computer 
+                        Science (COSC). Feel free to contact me any time and I look forward to seeing you!
+                    </p>
+                    <hr>
+                    <h3>About Me</h3>
+                    <ul>
+                        <li>Name: SHE, Fong Wing (Cinnie)</li>
+                        <li>Age: 20</li>
+                        <li>Location: Diamond Hill, Hong Kong</li>
+                    </ul>
+                    <hr>
                 </div>
-                <h2 id="profile">PROFILE</h2>
-                <p class="text-center">Final Year HKUST student in RMBI + COSC Major</p>
+
+                <h3>My Passion & Career Target</h3>
                 <p>
-                    Hi! I am Cinnie. Thank you for coming to my personal website. This website is coded from scratch 
-                    by me with self-learnt HTML5, CSS3, and Bootstrap5, and it is responsive! I’m currently a final 
-                    year bachelor degree student in HKUST, majoring in Risk Management and Business Intelligence (RMBI) & Computer 
-                    Science (COSC). Feel free to contact me any time and I look forward to seeing you!
+                    Machine Learning is an actively researching field in the recent decades, and it is everywhere 
+                    in our daily life. I believe that there are a lot of opportunities to apply Machine Learning 
+                    in solving problems in our world, and it could help people to have a more secure, and higher 
+                    quality way of life, which could make everyone lives happier. 
                 </p>
-                <hr>
-                <h3>About Me</h3>
-                <ul>
-                    <li>Name: SHE, Fong Wing (Cinnie)</li>
-                    <li>Age: 20</li>
-                    <li>Location: Diamond Hill, Hong Kong</li>
-                </ul>
+                <p>
+                    I am passionate about exploring the tech world since Year 1 when I got in touch with Python 
+                    and found out that I love coding, which requires both logical and creative thinking during the development 
+                    process. In my 4 years of university life, I explored from data analytics, to web and mobile app 
+                    development, and to machine learning and artificial intelligence. They are all facinating, 
+                    and I decided to explore particularly in Machine Learning in the end because it looks the 
+                    most challenging, and am striving to pursue a career as a Machine Learning Engineer after graduation.
+                </p>
                 <hr>
             </div>
 
-            <h3>My Passion & Career Target</h3>
-            <p>
-                I like accepting challenges and tackling problems that could be systematically solved. 
-                That’s why I was interested in mathematics related electives when I was in secondary 
-                school (I took BAFS, Economics, Physics, and M2 in Form 4-6). In university, I got in 
-                touch with Python in Year 1, I had fun with it and I became enthusiastic in programming 
-                thereafter. 
-            </p>
-            <p>
-                I am passionate about exploring the tech world, from data analytics, to web and mobile 
-                app development, and to machine learning and artificial intelligence. I have participated 
-                in 2 internships and 2 researches in the Machine Learning field (Computer Vision and NLP). 
-                For my career path after graduation, I am striving to pursue a career as a Machine Learning 
-                Engineer.
-            </p>
-            <hr>
-
-            <h3>Personal Characteristics</h3>
-            <p>
-                I am an introvert, but it doesn't mean that I am weak in teamwork. One of my believe is that great 
-                leaders are those who do the most. Communicate through actions but not words sometimes is the 
-                best way to push the team to a greater success. Of course, verbal communication is necessary too, 
-                and I believe I am able to handle that as well. In many of the course projects, I used to guiding 
-                the team on what to do, how to accomplish, when to finish, and we have done a great job in it. Last 
-                but not least, I am responsible in my own job, and am hardworking. I always strive my best to 
-                accomplish the tasks given to me.
-            </p>
-            <hr>
-
-            <div class="mb-3">    
-                <h2 id="education">MY EDUCATION</h2>
+            <div class="mb-3 d-none" id="education-page">    
+                <h2 class="mt-3" id="education">MY EDUCATION</h2>
                 <p>
                     I graduated from Po Leung Kuk No.1 W.H. Chung College in 2019 and have been receiving 
                     education in HKUST since then. In my Year 1-3 studies, my CGA was 3.431. Here are the 
@@ -287,9 +277,9 @@
                     </div>   
                 </div>                 
             </div>
-            <hr>
-            <div>
-                <h2 id="workexperience">WORK EXPERIENCE</h2>
+
+            <div class="d-none" id="work-experience-page">
+                <h2 class="mt-3" id="workexperience">WORK EXPERIENCE</h2>
                 <p>
                     In Year 2 Winter Semester, and during the same year Spring Semester, I have worked 
                     as an intern in PanopticAI Limited and viAct.ai with jobs related to AI.
@@ -376,25 +366,52 @@
                     </p>
                 </div>
             </div>
-            <hr>
-            <div>
-                <h2 id="otherexperience">OTHER EXPERIENCE</h2>
+
+            <div class="d-none" id="other-experience-page">
+                <h2 class="mt-3" id="otherexperience">OTHER EXPERIENCE</h2>
                 <p>
-                    I have joined 2 Undergraduate Research Opportunities Program (UROP), the INSPIRE Women in Technology 
-                    Program organised by Credit Suisse, the FDM Group Women in Tech Bootcamp, and participated 
-                    in 2 Case Competitions in the past 3 years of my university life. Besides, for projects that I have done, 
-                    please visit <a href="assets/pages/projects.html" target="_blank">'My Projects'</a> page.
+                    I have joined 3 Undergraduate Research Opportunities Program (UROP), a Final Year Project for RMBI, 
+                    the INSPIRE Women in Technology Program organised by Credit Suisse, the FDM Group Women in Tech 
+                    Bootcamp, and participated in 2 Case Competitions in the past 3 years of my university life. Besides, 
+                    for projects that I have done, please visit <a href="assets/pages/projects.html" target="_blank">'My Projects'</a> page.
                 </p>
+                <hr>
+                <div>
+                    <h3>UROP in HKUST</h3>
+                    <h4>
+                        Duration: September 2022 – Present
+                    </h4>
+                    <h4>Project Title: AI meets Big Data: User Analytics and Personalized Recommendation Based on Location Data</h4>
+                    <h4>Topic: Medical AI Flutter Application</h4>
+                    <p>
+                        Supervised by Professor CHAN Gary Shueng Han and Dr Ki Kit Lai and research assistant Mr. Tsui Wai Lun, I am currently 
+                        responsible for reading medical AI research papers, and writing Flutter code for mobile/web application development.
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h3>Final Year Project for RMBI</h3>
+                    <h4>
+                        Duration: August 2022 – Present
+                    </h4>
+                    <h4>Project Title: Credit Scoring (Predictive Analytics)</h4>
+                    <h4>Tasks: Automated Binning, Interactive Binning, and Reject Inference for Credit Scoring</h4>
+                    <p>
+                        Closely cooperating with our business partner - Spring Milestone, supervised by Professor Jingyi Wang, our group of 
+                        3 RMBI students is developing a Dataiku pipeline for automated and interactive binning with credit scoring data. Dataiku 
+                        is a centralized solution for data preparation, visualization, machine learning, analytics, etc., which we are able to 
+                        use Python and R for developing script to create a data pipeline. We are going to use R shiny library for the interactive 
+                        binning interface, and is doing more research on relevant Credit Scoring models, and reject inference approaches.
+                    </p>
+                </div>
                 <hr>
                 <div>
                     <h3>UROP in HKUST</h3>
                     <h4>
                         Duration: June 2022 – August 2022
                     </h4>
-                    <h4>
-                        Project Title: Deep Learning in Natural Language Processing
-                        Research Topic: Evaluation of FinBERT Performance on Multi-Class ESG Classification Task based on the MSCI Framework
-                    </h4>
+                    <h4>Project Title: Deep Learning in Natural Language Processing</h4>
+                    <h4>Research Topic: Evaluation of FinBERT Performance on Multi-Class ESG Classification Task based on the MSCI Framework</h4>
                     <p>
                         Supervised by Professor Huang Allen Hao and Professor Yang Yi, and with the help of Postgraduate students Miss Hui Wang and 
                         Mr. Srijith Kannan, I have completed the research on the evaluation of FinBERT performance for multi-class ESG classification. 
@@ -582,9 +599,9 @@
                     </p>
                 </div>
             </div>
-            <hr>
-            <div>
-                <h2 id="certificates">CERTIFICATES</h2>
+
+            <div class="d-none" id="certificates-page">
+                <h2 class="mt-3" id="certificates">CERTIFICATES</h2>
                 <p>
                     In Year 2 Summer, I have self learnt Java in Coursera to learn more about Object-Oriented Programming in order 
                     to improve my skills in software engineering.
@@ -620,129 +637,146 @@
                     </p>
                 </div>
             </div>
-            <hr>
-            <div>
-                <h2 id="abilities">ABILITIES</h2>
+
+            <div class="d-none" id="abilities-page">
+                <h2 class="mt-3" id="abilities">ABILITIES</h2>
                 <div>
                     <h3>Spoken &amp Written Language</h3>
-                    <p class="bold">Cantonese (Native)</p>
-                    <div class="progress">
-                        <div class="skills cantonese"></div>
-                    </div>
-
-                    <p class="bold">English (Fluent)</p>
-                    <div class="progress">
-                        <div class="skills english"></div>
-                    </div>
-
-                    <p class="bold">Mandarin (Fluent)</p>
-                    <div class="progress">
-                        <div class="skills putonghua"></div>
-                    </div>
-
-                    <p class="bold">Japanese (Introductory ~ Intermediate)</p>
-                    <div class="progress">
-                        <div class="skills japanese"></div>
-                    </div>
+                    <table class="table table-striped table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Skill</th>
+                                <th scope="col">Proficiency Level</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Cantonese</td>
+                            <td>Native</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>English</td>
+                            <td>Fluent</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Mandarin</td>
+                            <td>Fluent</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Japanese</td>
+                            <td>Introductory ~ Intermediate</td>
+                          </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="mt-3">
-                    <div class="mb-3">
+                <div class="mt-3 mb-3">
                         <h3>Programming & Other Skills</h3>
-                        <p class="bold">Python</p>
-                        <div class="progress">
-                            <div class="skills python"></div>
-                        </div>
-
-                        <p class="bold">PySpark</p>
-                        <div class="progress">
-                            <div class="skills pyspark"></div>
-                        </div>
-
-                        <p class="bold">C++</p>
-                        <div class="progress">
-                            <div class="skills cpp"></div>
-                        </div>
-
-                        <p class="bold">Java</p>
-                        <div class="progress">
-                            <div class="skills java"></div>
-                        </div>
-
-                        <p class="bold">SQL</p>
-                        <div class="progress">
-                            <div class="skills sql"></div>
-                        </div>
-
-                        <p class="bold">Excel</p>
-                        <div class="progress">
-                            <div class="skills excel"></div>
-                        </div>
-
-                        <p class="bold">AWS</p>
-                        <div class="progress">
-                            <div class="skills aws"></div>
-                        </div>
-
-                        <p class="bold">Tensorflow</p>
-                        <div class="progress">
-                            <div class="skills tensorflow"></div>
-                        </div>
-
-                        <p class="bold">Keras</p>
-                        <div class="progress">
-                            <div class="skills keras"></div>
-                        </div>
-    
-                        <p class="bold">HTML5</p>
-                        <div class="progress">
-                            <div class="skills html5"></div>
-                        </div>
-    
-                        <p class="bold">CSS3</p>
-                        <div class="progress">
-                            <div class="skills css3"></div>
-                        </div>
-
-                        <p class="bold">JavaScript</p>
-                        <div class="progress">
-                            <div class="skills js"></div>
-                        </div>
-    
-                        <p class="bold">Bootstrap 5</p>
-                        <div class="progress">
-                            <div class="skills bootstrap5"></div>
-                        </div>
-
-                        <p class="bold">Git/GitLab/GitHub</p>
-                        <div class="progress">
-                            <div class="skills git"></div>
-                        </div>
-
-                        <p class="bold">React</p>
-                        <div class="progress">
-                            <div class="skills react"></div>
-                        </div>
-
-                        <p class="bold">SQLite</p>
-                        <div class="progress">
-                            <div class="skills sqlite"></div>
-                        </div>
-
-                        <p class="bold">R</p>
-                        <div class="progress">
-                            <div class="skills r"></div>
-                        </div>
-
-                        <p class="bold">Mips</p>
-                        <div class="progress">
-                            <div class="skills mips"></div>
-                        </div>
-                    </div>
+                        <table class="table table-striped table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Skill</th>
+                                    <th scope="col">Familiarity Level</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>HTML5</td>
+                                    <td>80%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>C++</td>
+                                    <td>70%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Excel</td>
+                                    <td>70%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Bootstrap5</td>
+                                    <td>70%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>CSS3</td>
+                                    <td>65%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Python</td>
+                                    <td>60%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Android Development</td>
+                                    <td>60%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Git/GitHub</td>
+                                    <td>60%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>Pyspark</td>
+                                    <td>50%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>SQL</td>
+                                    <td>50%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>R</td>
+                                    <td>40%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>JavaScript</td>
+                                    <td>40%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">13</th>
+                                    <td>MIPS</td>
+                                    <td>40%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">14</th>
+                                    <td>Flutter</td>
+                                    <td>30%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">15</th>
+                                    <td>Java</td>
+                                    <td>30%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">16</th>
+                                    <td>React</td>
+                                    <td>10%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">17</th>
+                                    <td>SQLite</td>
+                                    <td>10%</td>
+                                </tr>
+                            </tbody>
+                        </table>
                 </div>
             </div>
-            <hr>
-            <div class="mb-3">
-                <h2 id="extraactivities">EXTRACURRICULAR ACTIVITIES</h2>
+
+            <div class="mb-3 d-none" id="extra-activities-page">
+                <h2 class="mt-3" id="extraactivities">EXTRACURRICULAR ACTIVITIES</h2>
                 <div>
                     <h3>Team Member of HKUST Table Tennis Team</h3>
                     <p>
@@ -761,9 +795,9 @@
                     </p>
                 </div>
             </div>
-            <hr>
-            <div>
-                <h2 id="hobbies">MY HOBBIES</h2>
+
+            <div class="d-none" id="hobbies-page">
+                <h2 class="mt-3" id="hobbies">MY HOBBIES</h2>
                 <div>
                     <h3>Songs Composition</h3>
                     <p>
@@ -813,6 +847,7 @@
         </div>
     </footer>
 
+    <script src="index.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="./assets/BS5/js/bootstrap.js"></script>
 </body>
